@@ -1,0 +1,12 @@
+maths=["raj","ravi","rose","rock","ram"]
+social=["anu","arun","ram","akila","ashok"]
+computer=["simran","rock","sam","suresh","ashok"]
+
+m=set(maths)
+s=set(social)
+c=set(computer)
+
+print("three sub: ",list(m&s&c))
+x=(m&s)|(s&c)|(m&c)
+print(x)
+print("two sub: ",list(x-(m&s&c)))
